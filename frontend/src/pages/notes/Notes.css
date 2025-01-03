@@ -1,0 +1,52 @@
+/* Overall container */
+.select-branch-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  /* Title styles */
+  .select-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    background-color: #87ceeb; /* Sky blue background */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px dashed #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Branch button container */
+  .branch-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual branch buttons */
+  .branch-button {
+    background-color: #ffd700; /* Yellow color */
+    border: 2px solid #000;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for buttons */
+  .branch-button:hover {
+    background-color: #ffae42; /* Orange shade on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Active/selected branch style */
+  .branch-button:active {
+    text-decoration: underline;
+    transform: scale(1.05); /* Smaller zoom effect on click */
+  }

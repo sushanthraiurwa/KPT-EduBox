@@ -1,9 +1,12 @@
 import React from 'react';
 import './Home.css';
 import sampleImage from './home_photo.jpg'; // Replace with your image path
+import Desc from './Desc';
+import Notes from '../notes/Notes';
 
 const Home = () => {
   return (
+    <>
     <div className="container">
       <div className="content">
         <div className="text-section">
@@ -20,6 +23,9 @@ const Home = () => {
         <button className="custom-button">Lab</button>
       </div>
     </div>
+    <Desc/>
+    <Notes/>
+    </>
   );
 };
 

@@ -1,0 +1,56 @@
+/* Header.css */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; /* Default padding */
+  background-color: #333; /* Dark background */
+  height: 15%; /* 15% height of viewport */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 60px; /* Slightly smaller logo size */
+  margin-right: 15px; /* Adjusted margin */
+}
+
+.header-site-name {
+  font-size: 1.9rem; /* Slightly smaller font size */
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffcc00; /* Yellow text for site name */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-site-name:hover {
+  color: #fff; /* Hover color to white */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px; /* Slightly smaller gap between links */
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly smaller font size */
+  font-weight: 500;
+  color: #ffcc00; /* Yellow text for navigation links */
+  padding: 5px 10px; /* Slightly smaller padding */
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.header-nav-link:hover {
+  background-color: #ffcc00; /* Yellow background on hover */
+  color: #333; /* Dark text on hover */
+  border-color: #fff; /* Add border on hover */
+}

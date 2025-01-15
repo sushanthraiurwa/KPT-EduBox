@@ -1,0 +1,52 @@
+/* branch.css */
+
+.branch-container {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 10px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    background-color: #5ca8d1;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  .branch-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .branch-button {
+    background-color: #f1c40f;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.2s, background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .branch-button:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+  }
+  

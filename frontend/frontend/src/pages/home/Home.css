@@ -1,0 +1,128 @@
+/* Home.css */
+
+/* Add a separating line between header and home */
+.home-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 85%; /* 85% height of viewport */
+  border-top: 4px solid #ffcc00; /* Yellow line separating header and home */
+}
+
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #ffcc00; /* Yellow for heading */
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-button {
+  text-decoration: none; 
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+.cta-button.secondary {
+  background-color: #333;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature-section {
+  background-color: #444; /* Slightly lighter background */
+  padding: 10px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-heading {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 1.8rem;
+  
+}
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background-color: #333;
+  padding: 20px;
+  width: 120px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.feature-box:hover {
+  transform: scale(1.1);
+  background-color: #ffcc00;
+}
+
+.feature-box a {
+  color: #ffcc00; /* Yellow text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.feature-box:hover a {
+  color: #333; /* Dark text on hover */
+}

@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
     public class Unit {
     
         @Id
-        private Long id;
+        private String id;
     
         private String branch;
         private String semester;
@@ -17,11 +17,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
         private String pdfLink;
     
         // Getters and Setters
-        public Long getId() {
+        public String getId() {
             return id;
         }
     
-        public void setId(Long id) {
+        public void setId(String id) {
             this.id = id;
         }
     

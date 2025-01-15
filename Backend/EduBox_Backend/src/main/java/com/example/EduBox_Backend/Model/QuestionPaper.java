@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class QuestionPaper {
 
     @Id
-    private Long id;
+    private String id;
     private String branch;
     private String sem;
     private String subjectName;
@@ -20,11 +20,11 @@ public class QuestionPaper {
     private int year;
 
     // Getters and Setters
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

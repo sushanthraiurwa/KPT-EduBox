@@ -1,0 +1,250 @@
+/* Sign-In Page Styles */
+.signin-container {
+    padding: 40px;
+    max-width: 500px;
+    margin: 50px auto; /* Added outer margin for space around the form */
+    background-color: #333; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text */
+  }
+  
+  .signin-header {
+    font-size: 36px; /* Increased font size for the header */
+    text-align: center;
+    margin-bottom: 40px; /* Increased bottom margin to give more space between header and form */
+    line-height: 1.5; /* Increased line height to make it a little taller */
+  }
+  
+  .signin-form input {
+    width: 95%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #444; /* Slightly lighter dark background for input */
+    color: #fff; /* White text in inputs */
+  }
+  
+  .signin-form input::placeholder {
+    color: #bbb; /* Lighter placeholder color */
+  }
+  
+  .signin-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffeb3b; /* Yellow background */
+    color: #333; /* Dark text */
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .signin-form button:hover {
+    background-color: #fdd835; /* Slightly darker yellow on hover */
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .signin-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .add-subject-btn {
+  background-color: #FFB300; /* Yellow background */
+  color: white; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+margin: 10px;
+  max-width: 200px;
+}
+
+.add-subject-btn:hover {
+  background-color: #ff9c00; /* Darker yellow on hover */
+ /* Slight zoom effect */
+}
+
+.add-subject-btn:active {
+  background-color: #e68900; /* Even darker yellow on click */
+ 
+}
+
+
+
+.add-unit-btn {
+    background-color: #FFB300; /* Yellow background */
+    color: white; /* White text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    max-width: 200px;
+  }
+  
+  .add-unit-btn:hover {
+    background-color: #ff9c00; /* Darker yellow on hover */
+    /* Slight zoom effect */
+  }
+  
+  .add-unit-btn:active {
+    background-color: #e68900; /* Even darker yellow on click */
+    
+  }
+
+  
+  
+
+  .admin-panel {
+    background-color: #ffe100; /* Dark background */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;.admin-panel {
+  background-color: #333333; /* Dark background */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-panel h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold; /* Make the text bold */
+}
+
+.admin-panel {
+    background-color: #333333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin-title {
+    font-weight: bold; /* Make the text bold */
+    font-size: 24px;
+  }
+  
+  }
+  /* Main container for the login page */
+
+
+/* Styling for the login page */
+.login-page {
+  background-color: #333;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Styling for the Login title */
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+/* Styling for the form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for the email and password input fields */
+.login-input-email,
+.login-input-password {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.login-input-email:focus,
+.login-input-password:focus {
+  background-color: #777;
+  outline: none;
+}
+
+/* Styling for the login button */
+.login-btn {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background-color: #f5c500;
+}
+
+/* Styling for the error message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling for the logout button */
+.logout-btn {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  margin-top: 20px; /* Space between the button and other elements */
+}
+
+.logout-btn:hover {
+  background-color: #cc0000; /* Darker red when hovered */
+}
+

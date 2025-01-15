@@ -1,0 +1,73 @@
+/* Universal reset for consistent styles across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Global styles for body */
+body {
+  font-family: 'Arial', sans-serif; /* Set a clean, professional font */
+  background-color: #333; /* Match the dark background color scheme */
+  color: #fff; /* White text for readability */
+  line-height: 1.6; /* Improve text readability */
+  overflow-x: hidden; /* Prevent horizontal scrolling issues */
+}
+
+/* App container styles */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it spans the full viewport height */
+}
+
+/* Styling for links */
+a {
+  text-decoration: none; /* Remove underline */
+  color: #ffcc00; /* Yellow color for links */
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #fff; /* White text on hover */
+}
+
+/* Buttons styling */
+button {
+  font-family: inherit; /* Match the font of the body */
+  cursor: pointer;
+  border: none;
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Images */
+img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add scroll behavior for smoother scrolling */
+html {
+  scroll-behavior: smooth;
+}

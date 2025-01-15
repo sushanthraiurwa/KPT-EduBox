@@ -1,0 +1,125 @@
+/* About.css */
+
+.about-container {
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #fff; /* White text */
+}
+
+.about-title {
+  font-size: 2.8rem; /* Slightly smaller font size */
+  color: #ffcc00; /* Yellow text for title */
+  margin-bottom: 30px;
+}
+
+.about-description {
+  font-size: 1.4rem; /* Slightly smaller font size */
+  color: #fff; /* White text */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-list {
+  list-style-type: disc;
+  margin: 30px 0;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.about-list li {
+  font-size: 1.1rem; /* Slightly smaller font size */
+  color: #fff; /* White text for list items */
+  margin-bottom: 15px;
+}
+
+.about-subtitle {
+  font-size: 2.2rem; /* Slightly smaller font size */
+  color: #ffcc00; /* Yellow text for subtitles */
+  margin-top: 40px;
+  text-align: left;
+}
+
+.about-vision,
+.about-services,
+.about-team,
+.about-why-choose {
+  font-size: 1.3rem; /* Slightly smaller font size */
+  color: #fff;
+  line-height: 1.8;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.about-services-list {
+  list-style-type: disc;
+  margin: 30px 0;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.about-services-list li {
+  font-size: 1.1rem; /* Slightly smaller font size */
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.about-thankyou {
+  font-size: 1.3rem; /* Slightly smaller font size */
+  color: #ffcc00; /* Yellow text */
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* Make 'strong' text standout */
+.about-description strong {
+  color: #ffcc00; /* Yellow color to strong text */
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem; /* Slightly smaller font size */
+  }
+
+  .about-description {
+    font-size: 1.3rem; /* Slightly smaller font size */
+  }
+
+  .about-list {
+    padding-left: 20px;
+  }
+
+  .about-list li {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+
+  .about-subtitle {
+    font-size: 1.8rem; /* Slightly smaller font size */
+  }
+
+  .about-vision,
+  .about-services,
+  .about-team,
+  .about-why-choose {
+    font-size: 1.2rem; /* Slightly smaller font size */
+  }
+
+  .about-services-list {
+    padding-left: 20px;
+  }
+
+  .about-services-list li {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+
+  .about-thankyou {
+    font-size: 1.1rem; /* Slightly smaller font size */
+  }
+}

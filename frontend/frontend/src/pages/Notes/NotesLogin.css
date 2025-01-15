@@ -1,0 +1,234 @@
+/* General Styles */
+.noteslogin-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.noteslogin-error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.noteslogin-admin-panel {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.noteslogin-branch-container,
+.noteslogin-semester-container {
+  margin-top: 20px;
+}
+
+.noteslogin-branch-buttons,
+.noteslogin-semester-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.noteslogin-branch-button,
+.noteslogin-semester-button {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.noteslogin-branch-button.selected,
+.noteslogin-semester-button.selected {
+  background-color: #f4b400;
+  color: white;
+}
+
+.noteslogin-action-buttons {
+  margin-top: 20px;
+}
+
+.noteslogin-show-subjects-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noteslogin-show-subjects-btn:hover {
+  background-color: #f4b400;
+}
+
+/* Subject List */
+.noteslogin-subjects-container {
+  margin-top: 30px;
+}
+
+.noteslogin-subjects-title {
+  font-size: 24px;
+}
+
+.noteslogin-subjects-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.noteslogin-subject-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.noteslogin-subject-more-btn,
+.noteslogin-delete-subject-btn {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noteslogin-subject-more-btn:hover,
+.noteslogin-delete-subject-btn:hover {
+  background-color: #f4b400;
+}
+
+/* Dropdown for Modules */
+.noteslogin-module-dropdown {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noteslogin-module-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.noteslogin-module-table th,
+.noteslogin-module-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.noteslogin-module-table th {
+  background-color: #f4b400;
+  color: white;
+}
+
+.noteslogin-delete-unit-btn {
+  padding: 5px 10px;
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noteslogin-delete-unit-btn:hover {
+  background-color: #c53030;
+}
+
+/* Add Unit Form */
+.noteslogin-add-unit-form {
+  margin-top: 20px;
+}
+
+.noteslogin-add-unit-form input {
+  
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.noteslogin-add-unit-btn {
+  margin: 10px  ;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noteslogin-add-unit-btn:hover {
+  background-color: #f4b400;
+}
+
+/* Add Subject Form */
+.noteslogin-add-subject-form {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noteslogin-add-subject-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.noteslogin-add-subject-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noteslogin-add-subject-btn:hover {
+  background-color: #f4b400;
+}
+
+/* Dropdown visibility */
+.noteslogin-module-dropdown {
+  display: none;
+}
+
+.noteslogin-subject-item.active .noteslogin-module-dropdown {
+  display: block;
+}
+
+.notes-admin-panel {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+/* Full viewport height */
+  background-color: #333; /* Dark background */
+  color: #ffcc00; /* Yellow text color */
+}
+
+.notes-admin-box {
+  padding: 30px; /* Space inside the box */
+  background-color: #444; /* Slightly lighter than background */
+  border: 2px solid #ffcc00; /* Yellow border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  text-align: center; /* Center alignment for text */
+}
+
+.notes-admin-heading {
+  font-size: 2.5rem; /* Large font size */
+  text-transform: uppercase; /* Uppercase letters */
+  font-weight: bold; /* Bold text */
+  border-bottom: 4px solid #ffcc00; /* Yellow underline effect */
+  padding-bottom: 10px; /* Space below text */
+  margin: 0; /* Remove default margin */
+  color: #ffcc00; /* Yellow text color */
+}

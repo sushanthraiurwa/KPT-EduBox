@@ -24,7 +24,7 @@ public class UnitService {
     }
 
     // Method to delete a Unit by ID
-    public void deleteUnit(Long id) {
+    public void deleteUnit(String id) {
         unitRepository.deleteById(id);
     }
 }

@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin
+
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RestController
 @RequestMapping("/api/subjects")
 public class NoteController {
@@ -31,7 +32,7 @@ public class NoteController {
 
     // Endpoint to delete a subject by ID
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteSubject(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteSubject(@PathVariable String id) {
         noteService.deleteSubject(id);
         return ResponseEntity.noContent().build();
     }

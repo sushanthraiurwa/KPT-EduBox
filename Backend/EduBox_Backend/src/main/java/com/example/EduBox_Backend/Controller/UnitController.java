@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RestController
 @RequestMapping("/api/unit") // Base URL for Unit-related endpoints
 public class UnitController {
@@ -27,12 +27,18 @@ public class UnitController {
     // POST method to add a new Unit (Module)
     @PostMapping
     public Unit addUnit(@RequestBody Unit unit) {
-        return unitService.saveUnit(unit);
+        try {
+            // Save the Unit in MongoDB
+            return unitService.saveUnit(unit);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to add unit. Please try again.");
+        }
     }
 
     // DELETE method to remove a unit by ID
     @DeleteMapping("/{id}")
-    public void deleteUnit(@PathVariable Long id) {
+    public void deleteUnit(@PathVariable String id) {
         unitService.deleteUnit(id);
     }
 }

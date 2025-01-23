@@ -24,7 +24,7 @@ public class NoteService {
     }
 
     // Delete a subject by ID
-    public void deleteSubject(Long id) {
+    public void deleteSubject(String id) {
         noteRepository.deleteById(id);
     }
 }
